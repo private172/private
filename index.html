@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get your report</title>
+    <link rel="stylesheet" href="style.css">
+     <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Smart Student Grade Calculator</h1>
+        <p>Calculate your grades and scholarship eligibility</p>
+
+        <form id="gradeForm">
+            <label for="studentName">Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your name">
+
+            <label for="math">Mathematics Marks (0-100)</label>
+            <input type="number" id="math" min="0" max="100" step="any">
+
+            <label for="english">English Marks (0-100)</label>
+            <input type="number" id="english" min="0" max="100" step="any">
+
+            <label for="science">Science Marks (0-100)</label>
+            <input type="number" id="science" min="0" max="100" step="any">
+
+            <label for="attendance">Attendance Percentage (0-100)</label>
+            <input type="number" id="attendance" min="0" max="100" step="any">
+
+            <label for="activity">Extra-curricular Activity</label>
+            <select id="activity">
+                <option value="none">None</option>
+                <option value="sports">Sports</option>
+                <option value="music-arts">Music and Arts</option>
+                <option value="debate-quiz">Debate and Quiz</option>
+                <option value="volunteering">Volunteering</option>
+            </select>
+
+            <div class="buttons">
+                <button type="submit">Calculate Results</button>
+                <button type="reset" class="clear">Clear</button>
+            </div>
+        </form>
+
+        <div id="message" role="status"></div>
+        <div id="results" aria-live="polite"></div>
+    </div>
+   
+</body>
+</html>
